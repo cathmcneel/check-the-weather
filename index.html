@@ -12,10 +12,27 @@
 </head>
 
 <body>
-    <header>Check the Weather</header>
+    <header>Weather Dashboard</header>
 
     <main>
-        
+        <div class="col-12 col-md-4">
+            <div class="card">
+              <h3 class="card-header text-uppercase">Search by City</h3>
+              <form id="user-form" class="card-body">
+                <label class="form-label" for="username">City Name</label>
+                <input name="city-name" id="locations" type="text" autofocus="true" class="form-input" />
+                <button id="search-btn" type="submit" class="btn">Check the weather</button>
+              </form>
+            </div>
+          </div>
+
+          <div class= "today-weather">
+              <h2 id="city-name">City Name</h2>
+              <p id="today-temp">Today's Temperature is </p>
+              <p id="today-humidity">Today's humidity is </p>
+              <p id="today-wind">Today's wind is </p>
+          </div>
+
     </main>
 
 <!-- Link to JS file-->
