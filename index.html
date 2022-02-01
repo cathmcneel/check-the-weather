@@ -13,22 +13,25 @@
 </head>
 
 <body>
-    <header>Weather Dashboard</header>
+    <header class="title">Weather Dashboard</header>
 
     <main>
-        <div class="col-12 col-md-4">
-            <div class="card">
-              <h3 class="card-header text-uppercase">Search by City</h3>
+      <section class="hero">
+            <div class="hero-body">
+              <div class="container">
+              <h3 class="title is-1 is-light" id="search-title">Search by City</h3>
               <form id="user-form" class="card-body">
-                <label class="form-label" for="username">City Name</label>
+                <label class="title-2" for="username">City Name</label>
                 <input name="city-name" id="locations" type="text" autofocus="true" class="form-input" />
                 <button id="search-btn" type="submit" class="btn">Check the weather</button>
               </form>
             </div>
           </div>
+          </div>
+        </section>
 
-          <div class= "today-weather">
-              <h2 id="city-name">City Name</h2>
+          <div class= "today-weather box is-full">
+              <h2 class="title is-3" id="city-name">City Name</h2>
               <p id="today-temp">Today's Temperature is </p>
               <p id="today-humidity">Today's humidity is </p>
               <p id="today-wind">Today's wind is </p>
@@ -37,7 +40,7 @@
           <div class= "container">
             <div class="columns">
             <div class="column is-one-fifth box" id="day1">
-              <h3>Day 1</h3>
+              <h3 class="title is-3" >Day 1</h3>
               <div>
                 <p id="day-1-temp">Today's Temperature is </p>
                 <p id="day-1-humidity">Today's humidity is </p>
@@ -45,7 +48,7 @@
               </div>
             </div>
             <div class="column is-one-fifth box" id="day2">
-              <h3>Day 2</h3>
+              <h3 class="title is-3" >Day 2</h3>
               <div>
                 <p id="day-2-temp">Today's Temperature is </p>
                 <p id="day-2-humidity">Today's humidity is </p>
@@ -53,7 +56,7 @@
               </div>
             </div>
             <div class="column is-one-fifth box" id="day3">
-              <h3>Day 3</h3>
+              <h3 class="title is-3" >Day 3</h3>
               <div>
                 <p id="day-3-temp">Today's Temperature is </p>
                 <p id="day-3-humidity">Today's humidity is </p>
@@ -61,7 +64,7 @@
               </div>
             </div>
             <div class="column is-one-fifth box" id="day4">
-              <h3>Day 4</h3>
+              <h3 class="title is-3">Day 4</h3>
               <div>
                 <p id="day-4-temp">Today's Temperature is </p>
                 <p id="day-4-humidity">Today's humidity is </p>
@@ -69,15 +72,14 @@
               </div>
             </div>
             <div class="column is-one-fifth box" id="day5">
-              <h3>Day 5</h3>
+              <h3 class="title is-3" >Day 5</h3>
               <div>
                 <p id="day-5-temp">Today's Temperature is </p>
                 <p id="day-5-humidity">Today's humidity is </p>
                 <p id="day-5-wind">Today's wind is </p>
               </div>
-            </div>
-            
           </div>
+        </div>
         </div>
 
     </main>
@@ -85,3 +87,5 @@
 <!-- Link to JS file-->
     <script src="./assets/js/js/home.js"></script>
 </body>
+
+<footer class="footer">Made by Catherine</footer>

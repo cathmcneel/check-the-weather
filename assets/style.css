@@ -1,14 +1,18 @@
 :root {
-    --primary: #ccdad1;
-    --secondary: #9caea9;
+    --primary: hsl(0, 0%, 96%);
+    --secondary: hsl(171, 100%, 41%);
     --tertiary: #788585;
-    --light-dark: #6f6866;
-    --dark: #38302e;
+    --light-dark:hsl(171, 100%, 41%);
+    --dark: hsl(0, 0%, 21%);
     --border-radius: .3rem;
   }
-  
+  @import "bulma/sass/utilities/_all.sass";
+  @import "bulma/sass/grid/columns.sass";
   * {
     box-sizing: border-box;
+  }
+  #search-title {
+    color:hsl(0, 0%, 96%);
   }
   .btn {
     font-size: 1.3rem;
@@ -39,7 +43,7 @@
   
   .btn-back {
     border-radius: var(--border-radius);
-    color: var(--primary);
+  
     border: none;
     outline: none;
     background-color: var(--light-dark);
@@ -54,7 +58,7 @@
   }
   
    .btn-back:hover {
-    color: var(--primary);
+ 
     background-color: var(--tertiary);
     transform: translate(0, 0);
     box-shadow: 2px 2px var(--dark);
@@ -68,16 +72,6 @@
   
   .hero p {
     max-width: 75%;
-  }
-  
-  .app-title {
-    font-size: 3rem;
-    background-color: var(--primary);
-    color: var(--dark);
-    padding: 0 10px;
-    display: inline-block;
-    border-radius: var(--border-radius);
-    box-shadow: 6px 5px var(--light-dark);
   }
   
   .list-group {
