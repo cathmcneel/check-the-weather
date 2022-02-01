@@ -74,6 +74,18 @@ var fiveDayForecast = function(lat,lon) {
                 // two days from now is index1 from weekWeather
                 var twoDaysFromNowWeather = weekWeather[1]
                 var twoDaysWeather = weekWeather[1].temp.day
+
+                // three days from now is index1 from weekWeather
+                var threeDaysFromNowWeather = weekWeather[2]
+                var threeDaysWeather = weekWeather[2].temp.day
+
+                // four days from now is index1 from weekWeather
+                var fourDaysFromNowWeather = weekWeather[3]
+                var fourDaysWeather = weekWeather[3].temp.day
+
+                // five days from now is index1 from weekWeather
+                var fiveDaysFromNowWeather = weekWeather[4]
+                var fiveDaysWeather = weekWeather[4].temp.day
             });
         };
     });
